@@ -1,3 +1,3 @@
-NOME: João Pedro Torrano Dias \n
-CURSO: GES
+NOME: João Pedro Torrano Dias / 
+CURSO: GES / 
 MATRÍCULA: 273
