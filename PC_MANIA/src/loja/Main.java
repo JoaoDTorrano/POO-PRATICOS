@@ -83,7 +83,6 @@ public class Main {
                     novoPC.addMemoriaUSB(new MemoriaUSB("Pen-drive", 32));
                 } else if (opcao == 3) {
                     novoPC = new Computador("Dell", preco3);
-                    // ADD THIS LINE
                     novoPC.hardwareBasico = new HardwareBasico[3];
                     novoPC.sistemaOperacional = new SistemaOperacional("Windows 10", 64);
                     novoPC.hardwareBasico[0] = new HardwareBasico("Processador Pentium Core i7", 4500);
