@@ -13,11 +13,10 @@ public class Main {
         Cliente cliente = new Cliente("Jaun", "345.321.34.12");
 
         System.out.println("Bem-vindo à PC Mania!");
-        System.out.println("Por favor, digite sua matricula para calcular o preço dos PCs: ");
-        int matricula = entrada.nextInt();
-        float preco1 = matricula;
-        float preco2 = matricula - 1234;
-        float preco3 = matricula + 5678;
+        int preco_base = 2000;
+        float preco1 = preco_base;
+        float preco2 = preco_base + 1234;
+        float preco3 = preco_base + 5678;
 
         System.out.println("Nossas promoções imperdíveis:");
         System.out.println("--- Promoção 1 ---");
@@ -52,14 +51,8 @@ public class Main {
 
         //--------------------------------------------------------------------------------------------------
 
-        System.out.println("Olá! Por favor, informe seu nome e CPF:");
-        entrada.nextLine(); // Consume the leftover newline
-        System.out.print("Nome: ");
-        String nomeCliente = entrada.nextLine();
-        System.out.print("CPF: ");
-        String cpfCliente = entrada.nextLine();
 
-        Cliente novoCliente = new Cliente(nomeCliente, cpfCliente);
+        Cliente novoCliente = new Cliente(cliente.getNome(), cliente.getCpf());
         Computador[] pcsComprados = new Computador[10];
         int pcCount = 0;
         int opcao = -1;
