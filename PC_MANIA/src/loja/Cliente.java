@@ -23,9 +23,10 @@ public class Cliente {
     public float calculaTotalCompra(){
         float totalDacompra = 0;
         for (Computador total : computador) {
-            totalDacompra += total.getPreco();
+            if (total != null) {
+                totalDacompra += total.getPreco();
+            }
         }
-
         return totalDacompra;
     }
 
@@ -33,16 +34,7 @@ public class Cliente {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public String getCpf() {
         return cpf;
     }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
 }

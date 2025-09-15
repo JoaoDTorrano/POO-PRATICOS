@@ -7,8 +7,8 @@ import loja.computador.componentes.SistemaOperacional;
 public class Computador {
     private String marca;
     private float preco;
-    HardwareBasico[] hardwareBasico;
-    SistemaOperacional sistemaOperacional;
+    public HardwareBasico[] hardwareBasico;
+    public SistemaOperacional sistemaOperacional;
     MemoriaUSB musb;
 
     public void setHardwareBasico(HardwareBasico[] hardwareBasico) {
