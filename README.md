@@ -1,1 +1,3 @@
-# POO-PRATICOS
+# João Pedro Torrano Dias
+# GES
+# 273
