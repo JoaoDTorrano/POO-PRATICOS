@@ -1,6 +1,6 @@
-**NOME:** João Pedro Torrano Dias
-**MATRÍCULA:** 273
-**CURSO:** GES
+* **NOME:** João Pedro Torrano Dias
+* **MATRÍCULA:** 273
+* **CURSO:** GES
 # Relatório de Desenvolvimento: Projeto PC Mania 💻
 
 Este documento detalha a colaboração técnica entre o aluno e o assistente de IA (**Gemini 1.5 Flash**) no desenvolvimento do sistema de e-commerce de computadores.
