@@ -25,27 +25,13 @@ O uso da Inteligência Artificial foi focado na resolução de erros de execuç�
 * **Pedido:** Correção de erro ao tentar definir nomes em componentes de hardware.
 * **Ajuda prestada:** Diagnóstico de que o array de objetos estava sendo declarado, mas os objetos internos não estavam sendo instanciados (`new`). A IA auxiliou na compreensão de que cada posição do array precisa de uma instância própria antes de acessar seus métodos `set`.
 
-### 3. Lógica de Preços Dinâmicos
-* **Pedido:** Substituição do valor fixo pela matrícula `2999` e cálculo automático das outras promoções.
-* **Ajuda prestada:** Criação da lógica de derivação de preços:
-    * `comp[1].setPreco(comp[0].getPreco() + 1234);`
-    * `comp[2].setPreco(comp[0].getPreco() + 5678);`
-
-### 4. Correção da Lógica de Acumulação (Carrinho)
+### 3. Correção da Lógica de Acumulação (Carrinho)
 * **Pedido:** Problema onde apenas o preço do primeiro computador era somado ao total.
 * **Ajuda prestada:** Identificação de um erro de lógica no laço `for-each` na classe `Cliente`. O comando `break` estava interrompendo a soma precocemente. A IA sugeriu a remoção do `break` e a inicialização da variável local para garantir o cálculo correto de todos os itens não nulos.
 
-### 5. Tratamento de Dados Vazios
+### 4. Tratamento de Dados Vazios
 * **Pedido:** Erro onde aparecia "null" e "0.0" quando uma opção não era preenchida.
 * **Ajuda prestada:** Implementação de verificações condicionais (`if (computador != null)`) para filtrar slots vazios e evitar que informações não cadastradas poluíssem a saída de dados do sistema.
-
----
-
-## 💡 Aprendizado Técnico Consolidado
-Através das interações com a IA, foram reforçados os conceitos de:
-* **Instanciação de Arrays de Referência:** Diferença entre o array e os objetos contidos nele.
-* **Controle de Fluxo:** Impacto do comando `break` em iterações de soma.
-* **Encapsulamento:** Uso correto de `Getters` e `Setters` para comunicação entre classes (`Cliente`, `Computador` e `HardwareBasico`).
 
 ---
 **Nota:** A arquitetura do sistema e a estrutura das classes foram definidas pelo aluno, com a IA atuando como monitor digital para resolução de entraves técnicos específicos.
